@@ -28,7 +28,9 @@
         <form method="post" id="account-form">
           <div class="column">
             <div class="row">
-              <label for="firstName">First name</label>
+              <label for="firstName"
+                >First name<span aria-label="required">*</span></label
+              >
               <input
                 type="text"
                 name="firstName"
@@ -39,10 +41,13 @@
                 title="Input a name of 2 characters or longer"
                 required
               />
-              <span></span>
             </div>
             <div class="row">
-              <label for="email">Email (ex. john@gmail.com)</label>
+              <label for="email"
+                >Email (ex. john@gmail.com)<span aria-label="required"
+                  >*</span
+                ></label
+              >
               <input
                 type="text"
                 name="email"
@@ -53,10 +58,13 @@
                 title="Your email can include only letters and numbers, @ and dot signs"
                 required
               />
-              <span></span>
             </div>
             <div class="row">
-              <label for="pwd">Password (ex. 75835Gg$)</label>
+              <label for="pwd"
+                >Password (ex. 75835Gg$)<span aria-label="required"
+                  >*</span
+                ></label
+              >
               <input
                 type="password"
                 name="password"
@@ -67,12 +75,13 @@
                 title="Your password should be 8 characters long, include 1 capital, 1 small letter, 1 number and 1 special character"
                 required
               />
-              <span></span>
             </div>
           </div>
           <div class="column">
             <div class="row">
-              <label for="lastName">Last name</label>
+              <label for="lastName"
+                >Last name<span aria-label="required">*</span></label
+              >
               <input
                 type="text"
                 name="lastName"
@@ -83,10 +92,11 @@
                 title="Input a surname of 2 characters or longer"
                 required
               />
-              <span></span>
             </div>
             <div class="row">
-              <label for="phone">Phone number</label>
+              <label for="phone"
+                >Phone number<span aria-label="required">*</span></label
+              >
               <input
                 type="tel"
                 name="phone"
@@ -96,10 +106,11 @@
                 title="Your phone number may include only numbers, plus and minus signs"
                 required
               />
-              <span></span>
             </div>
             <div class="row">
-              <label for="conf-pwd">Confirm password</label>
+              <label for="conf-pwd"
+                >Confirm password<span aria-label="required">*</span></label
+              >
               <input
                 type="text"
                 name="conf-pwd"
@@ -108,7 +119,6 @@
                 maxlength="20"
                 required
               />
-              <span></span>
             </div>
           </div>
         </form>
