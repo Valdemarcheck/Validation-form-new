@@ -37,3 +37,20 @@
 
   font-size: 14px;
 }
+
+body {
+  height: 100%;
+  display: flex;
+}
+
+.left-side {
+  min-width: 40%;
+  background-image: url("./images/house.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.right-side {
+  flex: 1;
+}
