@@ -84,13 +84,18 @@ header {
 
   background-color: var(--header-bg-clr);
   text-align: center;
-  font-size: 2rem;
+
   color: var(--main-clr);
 }
 
 .logo {
-  height: 100px;
+  height: min(20vw, 100px);
   width: auto;
+}
+
+h1 {
+  font-family: "cocogoose-light";
+  font-size: min(10vw, 4rem);
 }
 
 .disclaimer {
