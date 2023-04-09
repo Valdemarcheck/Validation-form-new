@@ -40,7 +40,7 @@
   --form-shadow-clr: #686868;
 
   --side-padding: min(35px, 3vw);
-  --bottom-margin: clamp(10px, 5vw, 50px);
+  --bottom-margin: clamp(10px, 5vh, 200px);
 
   font-size: 14px;
   color: var(--form-text-clr);
@@ -101,7 +101,7 @@ h1 {
 .disclaimer {
   padding: min(20%, 150px) var(--side-padding) 0;
   color: var(--disclaimer-text-clr);
-  font-size: max(1vw, 1rem);
+  font-size: clamp(0.8rem, 2vw, 1.5rem);
 }
 
 .disclaimer p:first-child {
@@ -117,6 +117,7 @@ h1 {
 
 .form-section h2 {
   margin-bottom: 20px;
+  font-size: min(1.5rem, 5vw);
 }
 
 #account-form {
@@ -128,20 +129,29 @@ h1 {
 .column {
   display: flex;
   flex-direction: column;
-  min-width: 80px;
+  min-width: 70px;
   width: 20vw;
-  max-width: 250px;
+  max-width: 200px;
 }
 
 .column .row:not(:last-child) {
   margin-bottom: calc(var(--bottom-margin) / 2);
 }
 
+.row * {
+  display: inline-block;
+  width: 120%;
+}
+
+label {
+  font-size: clamp(0.6rem, 3vw, 1.2rem);
+}
+
 input {
   color: inherit;
   font-family: inherit;
   font-size: inherit;
-  width: 100%;
+  height: min(1.4rem, 10vw);
 }
 
 .footer {
