@@ -34,6 +34,7 @@
   --main-clr: #f9fafb;
   --disclaimer-text-clr: #000;
   --form-text-clr: #303946;
+  --header-bg-clr: #30394665;
 
   font-size: 14px;
 }
@@ -44,6 +45,7 @@ body {
 }
 
 .left-side {
+  position: relative;
   min-width: 40%;
   background-image: url("./images/house.gif");
   background-repeat: no-repeat;
@@ -53,4 +55,29 @@ body {
 
 .right-side {
   flex: 1;
+  background-color: var(--main-clr);
+}
+
+header {
+  position: absolute;
+  display: block;
+  top: 100px;
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  background-color: var(--header-bg-clr);
+  text-align: center;
+  font-size: 2rem;
+  color: var(--main-clr);
+}
+
+.logo {
+  height: 100px;
+  width: auto;
 }
