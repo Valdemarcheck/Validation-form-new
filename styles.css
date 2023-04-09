@@ -39,6 +39,8 @@
   --form-bg-clr: #fff;
   --form-shadow-clr: #686868;
 
+  --submit-hover-clr: #748e5e;
+
   --side-padding: min(35px, 3vw);
   --bottom-margin: clamp(10px, 5vh, 200px);
 
@@ -101,7 +103,7 @@ h1 {
 .disclaimer {
   padding: min(20%, 150px) var(--side-padding) 0;
   color: var(--disclaimer-text-clr);
-  font-size: clamp(0.8rem, 2vw, 1.5rem);
+  font-size: clamp(0.7rem, 2vw, 1.5rem);
 }
 
 .disclaimer p:first-child {
@@ -113,6 +115,7 @@ h1 {
   padding: var(--side-padding);
   background-color: var(--form-bg-clr);
   box-shadow: 0 1px 6px var(--form-shadow-clr);
+  margin-bottom: calc(var(--bottom-margin) / 4);
 }
 
 .form-section h2 {
@@ -123,7 +126,7 @@ h1 {
 #account-form {
   display: flex;
   flex-wrap: wrap;
-  gap: min(100px, 10vw);
+  gap: clamp(var(--bottom-margin), 10vw, 100px);
 }
 
 .column {
@@ -135,7 +138,7 @@ h1 {
 }
 
 .column .row:not(:last-child) {
-  margin-bottom: calc(var(--bottom-margin) / 2);
+  margin-bottom: calc(var(--bottom-margin) / 4);
 }
 
 .row * {
@@ -144,16 +147,47 @@ h1 {
 }
 
 label {
-  font-size: clamp(0.6rem, 3vw, 1.2rem);
+  font-size: clamp(0.6rem, 3vw, 1rem);
 }
 
 input {
   color: inherit;
   font-family: inherit;
   font-size: inherit;
-  height: min(1.4rem, 10vw);
+  height: clamp(1rem, 4vw, 1.5rem);
 }
 
 .footer {
   padding: var(--side-padding);
+}
+
+.footer {
+  font-weight: bold;
+}
+
+.footer p {
+  font-size: clamp(0.7rem, 2vw, 1.2rem);
+}
+
+button[type="submit"] {
+  width: clamp(100px, 20vw, 200px);
+  height: clamp(30px, 8vw, 40px);
+  margin-bottom: calc(var(--bottom-margin) / 2);
+  background-color: var(--accent-clr);
+  color: var(--main-clr);
+  font-size: clamp(0.7rem, 2vw, 1rem);
+
+  font-weight: inherit;
+  border-radius: 10px;
+  border: none;
+}
+
+a {
+  color: var(--accent-clr);
+}
+
+/* Interactivity */
+
+button[type="submit"]:hover {
+  background-color: var(--submit-hover-clr);
 }
