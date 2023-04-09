@@ -23,8 +23,42 @@
         </p>
         <p>You <em>know</em> you want to.</p>
       </div>
-      <div class="form-section"></div>
-      <div class="footer"></div>
+      <div class="form-section">
+        <h2>Let's do this!</h2>
+        <form method="post" id="account-form">
+          <div class="column">
+            <div class="row">
+              <label for="firstName">First name</label>
+              <input type="text" name="firstName" id="firstName" required />
+            </div>
+            <div class="row">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <div class="row">
+              <label for="pwd">Password</label>
+              <input type="password" name="password" id="pwd" required />
+            </div>
+          </div>
+          <div class="column">
+            <div class="row">
+              <label for="lastName">Last name</label>
+              <input type="text" name="lastName" id="lastName" required />
+            </div>
+            <div class="row">
+              <label for="phone">Phone number</label>
+              <input type="tel" name="phone" id="phone" required />
+            </div>
+            <div class="row">
+              <label for="conf-pwd">Confirm password</label>
+              <input type="text" name="conf-pwd" id="conf-pwd" required />
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="footer">
+        <button type="submit" form="account-form">Create account</button>
+      </div>
     </div>
   </body>
 </html>
