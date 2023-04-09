@@ -40,6 +40,7 @@
   --form-shadow-clr: #686868;
 
   --submit-hover-clr: #748e5e;
+  --invalid-clr: #e85252;
 
   --side-padding: min(35px, 3vw);
   --bottom-margin: clamp(10px, 5vh, 200px);
@@ -138,23 +139,27 @@ h1 {
 }
 
 .column .row:not(:last-child) {
-  margin-bottom: calc(var(--bottom-margin) / 4);
+  margin-bottom: calc(var(--bottom-margin) / 2);
 }
 
 .row * {
-  display: inline-block;
+  display: block;
   width: 120%;
 }
 
 label {
-  font-size: clamp(0.6rem, 3vw, 1rem);
+  font-size: clamp(0.4rem, 2vw, 100%);
+  margin-bottom: 5px;
 }
 
 input {
   color: inherit;
   font-family: inherit;
-  font-size: inherit;
+  outline: 2px solid var(--form-text-clr);
+  border: none;
+  padding: 0 2px;
   height: clamp(1rem, 4vw, 1.5rem);
+  transition: outline-color ease 0.3s;
 }
 
 .footer {
@@ -190,4 +195,14 @@ a {
 
 button[type="submit"]:hover {
   background-color: var(--submit-hover-clr);
+}
+
+/* Form accessability */
+
+input:invalid {
+  outline-color: var(--invalid-clr);
+}
+
+input:valid {
+  outline-color: var(--submit-hover-clr);
 }

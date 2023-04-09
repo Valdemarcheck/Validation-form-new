@@ -29,29 +29,86 @@
           <div class="column">
             <div class="row">
               <label for="firstName">First name</label>
-              <input type="text" name="firstName" id="firstName" required />
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="John"
+                minlength="2"
+                pattern="[A-Za-z]+"
+                title="Input a name of 2 characters or longer"
+                required
+              />
+              <span></span>
             </div>
             <div class="row">
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" required />
+              <label for="email">Email (ex. john@gmail.com)</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                minlength="5"
+                placeholder="johndoe@gmail.com"
+                pattern="\w+@\w+\.com|ru|org|net|en"
+                title="Your email can include only letters and numbers, @ and dot signs"
+                required
+              />
+              <span></span>
             </div>
             <div class="row">
-              <label for="pwd">Password</label>
-              <input type="password" name="password" id="pwd" required />
+              <label for="pwd">Password (ex. 75835Gg$)</label>
+              <input
+                type="password"
+                name="password"
+                id="pwd"
+                minlength="8"
+                maxlength="20"
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*]).{8,}$"
+                title="Your password should be 8 characters long, include 1 capital, 1 small letter, 1 number and 1 special character"
+                required
+              />
+              <span></span>
             </div>
           </div>
           <div class="column">
             <div class="row">
               <label for="lastName">Last name</label>
-              <input type="text" name="lastName" id="lastName" required />
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Doe"
+                minlength="2"
+                pattern="[A-Za-z]+"
+                title="Input a surname of 2 characters or longer"
+                required
+              />
+              <span></span>
             </div>
             <div class="row">
               <label for="phone">Phone number</label>
-              <input type="tel" name="phone" id="phone" required />
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="+7-384-945-1514"
+                pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
+                title="Your phone number may include only numbers, plus and minus signs"
+                required
+              />
+              <span></span>
             </div>
             <div class="row">
               <label for="conf-pwd">Confirm password</label>
-              <input type="text" name="conf-pwd" id="conf-pwd" required />
+              <input
+                type="text"
+                name="conf-pwd"
+                id="conf-pwd"
+                minlength="8"
+                maxlength="20"
+                required
+              />
+              <span></span>
             </div>
           </div>
         </form>
