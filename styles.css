@@ -122,7 +122,7 @@ h1 {
 
 .form-section h2 {
   margin-bottom: 20px;
-  font-size: calc(var(--initial-font-size) + 2px);
+  font-size: calc(var(--initial-font-size) + 0.4rem);
 }
 
 #account-form {
@@ -137,7 +137,7 @@ h1 {
   justify-content: space-between;
   min-width: 70px;
   width: 20vw;
-  max-width: 200px;
+  max-width: 250px;
 }
 
 .column .row:not(:last-child) {
@@ -160,7 +160,6 @@ label {
 input {
   padding: 0 2px;
   height: clamp(1rem, 3vw, 1lh);
-  max-width: 200px;
 
   color: inherit;
   font-family: inherit;
