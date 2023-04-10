@@ -208,6 +208,7 @@ a:hover {
 
 button[type="submit"]:hover {
   background-color: var(--submit-hover-clr);
+  cursor: pointer;
 }
 
 /* Form accessability */
