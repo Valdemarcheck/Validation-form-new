@@ -158,6 +158,7 @@ label {
 input {
   padding: 0 2px;
   height: clamp(1rem, 3vw, 1lh);
+  max-width: 200px;
 
   color: inherit;
   font-family: inherit;
