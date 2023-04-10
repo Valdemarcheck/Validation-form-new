@@ -179,14 +179,14 @@ input {
 
 button[type="submit"] {
   width: clamp(100px, 20vw, 200px);
-  height: clamp(30px, 8vw, 40px);
+  aspect-ratio: 4/1;
   margin-bottom: calc(var(--bottom-margin) / 2);
   background-color: var(--accent-clr);
   color: var(--main-clr);
   font-size: clamp(0.7rem, 2vw, 1rem);
 
   font-weight: inherit;
-  border-radius: 10px;
+  border-radius: 6px;
   border: none;
 }
 
