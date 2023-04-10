@@ -192,9 +192,14 @@ button[type="submit"] {
 
 a {
   color: var(--accent-clr);
+  text-decoration: none;
 }
 
 /* Interactivity */
+
+a:hover {
+  color: var(--submit-hover-clr);
+}
 
 button[type="submit"]:hover {
   background-color: var(--submit-hover-clr);
