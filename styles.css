@@ -151,8 +151,10 @@ h1 {
 }
 
 label {
-  font-size: calc(var(--initial-font-size) - 0.2rem);
   margin-bottom: 5px;
+  font-size: calc(var(--initial-font-size) - 0.3rem);
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 input {
